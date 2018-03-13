@@ -20,11 +20,18 @@
 						%p
 							When checked, we will automatically cancel orders marked high risk by Shopify.
 						%form.margin-top
-							.checkbox.input-lg.no-margin.no-padding
+							.checkbox.input-lg.no-margin.no-padding.height-auto
 								%label
 									%input{:type=>"checkbox", :checked=>"checked"}
 									%span.quarter-margin-left
 										Enable Fraud Alert Cancelations
+						%hr.margin-top.margin-bottom
+						%h4.bold-font-name.quarter-margin-bottom.dark-text-color
+							Canceled orders
+						%p
+							Text explaining what this setting means and why it's important
+						%a.btn.btn-default{:hred=>"#"} 
+							Export cancled orders
 %section
 	.container
 		.row
